@@ -1,0 +1,21 @@
+{
+  ... 
+  private
+  "eninges": {
+    "node": ">=16.0.0",
+    "npm": ">=6.0.0",
+    "yarn": "please use npm",
+  },
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    ...
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
+  },
+  dependencies
+  ...
+  devDependencies
+  "resolutions": {
+    "webpack": "^5"
+  }
+}
