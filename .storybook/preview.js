@@ -1,5 +1,8 @@
-import '../styles/globals.css';
+// @ts-check
+import { RouterContext } from 'next/dist/shared/lib/router-context';
 import * as NextImage from 'next/image';
+import React from 'react';
+// import '../pages/globals.scss';
 
 const BREAKPOINTS_INT = {
   xs: 375,
@@ -42,4 +45,8 @@ export const parameters = {
     },
   },
   viewport: { viewports: customViewports },
+  layout: 'fullscreen',
+  nextRouter: {
+    Provider: RouterContext.Provider,
+  },
 };
